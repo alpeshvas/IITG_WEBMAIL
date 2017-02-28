@@ -1,3 +1,6 @@
+/*
+* author - alpesh vas
+*/
 var table=document.getElementsByTagName("table")[7];
 for ( var i=0;row=table.rows[i],i<100;i++){
 		var col=row.cells[1];

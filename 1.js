@@ -1,3 +1,6 @@
+/*
+* author - alpesh vas
+*/
 var table=document.getElementsByTagName("table")[7];
 var extra=["noticeboard","sports","security","patel","medsec","maintenance","mailman-owner",
 "gtm","estb","engoff","elections","dos","arun","akb","vp@iitg","techniche","swc@","pro@i","placement@","clhod@","hackers@",
