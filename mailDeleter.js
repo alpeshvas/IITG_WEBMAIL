@@ -6,13 +6,13 @@
 // @grant       none
 // ==/UserScript==
 var table=document.getElementsByTagName("table")[7];
-var extra=["noticeboard","sports","security","patel","medsec","maintenance","mailman-owner",
+var webmailIds=["noticeboard","sports","security","patel","medsec","maintenance","mailman-owner",
 "gtm","estb","engoff","elections","dos","arun","akb","vp@iitg","techniche","swc@","pro@i","placement@","clhod@","hackers@",
 "techsec","gensec_welfare@","sport","cultsec","edc","alcheringa"];
 var checked=false;
 function check(withthis){
-	for(var i=0,len=extra.length;i<len;++i){
-		if(withthis.startsWith(extra[i])){
+	for(var i=0,len=webmailIds.length;i<len;++i){
+		if(withthis.startsWith(webmailIds[i])){
 			return true;
 		}
 	}
