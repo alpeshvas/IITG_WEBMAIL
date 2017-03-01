@@ -1,10 +1,15 @@
-/*
-* author - alpesh vas
-*/
+// ==UserScript==
+// @name        delete mails
+// @namespace   https://webmail.iitg.ernet.in/src/right_main.php?PG_SHOWALL=1&use_mailbox_cache=1&startMessage=1&mailbox=INBOX
+// @include     https://webmail.iitg.ernet.in/src/right_main.php?PG_SHOWALL=1&use_mailbox_cache=1&startMessage=1&mailbox=INBOX
+// @version     1
+// @grant       none
+// ==/UserScript==
 var table=document.getElementsByTagName("table")[7];
 var extra=["noticeboard","sports","security","patel","medsec","maintenance","mailman-owner",
 "gtm","estb","engoff","elections","dos","arun","akb","vp@iitg","techniche","swc@","pro@i","placement@","clhod@","hackers@",
 "techsec","gensec_welfare@","sport","cultsec","edc","alcheringa"];
+var checked=false;
 function check(withthis){
 	for(var i=0,len=extra.length;i<len;++i){
 		if(withthis.startsWith(extra[i])){
@@ -23,6 +28,7 @@ for ( var i=0;row=table.rows[i];i++){
 				var id=col.getElementsByTagName("label")[0].getAttribute("for");
 				if(check(title)){
 					document.getElementById(id).checked=true;
+					checked=true;
 					// console.log(title);
 				}
 			}
@@ -32,4 +38,7 @@ for ( var i=0;row=table.rows[i];i++){
 	// console.log("done this ")
 }
 ;
-document.forms[0].submit();
+if(checked==true){
+	document.forms[0].submit();
+// 	window.open("https://webmail.iitg.ernet.in/src/webmail.php");
+}
