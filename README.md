@@ -1,4 +1,4 @@
-#Custom mail deleter for IITG webmail
+#Custom mail deleter for IITG webmail(for firefox only )
 This script is for those who are too lazy to delete mails till folder size reaches its limit.
 You can run this script using Greasemonkey or simply on web-console.
 
