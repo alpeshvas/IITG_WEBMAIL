@@ -1,3 +1,4 @@
+
 // ==UserScript==
 // @name        delete mails
 // @namespace   https://webmail.iitg.ernet.in/src/right_main.php?PG_SHOWALL=1&use_mailbox_cache=1&startMessage=1&mailbox=INBOX
@@ -5,6 +6,10 @@
 // @version     1
 // @grant       none
 // ==/UserScript==
+/*
+* author - alpesh vas
+*/
+
 var table=document.getElementsByTagName("table")[7];
 var webmailIds=["noticeboard","sports","security","patel","medsec","maintenance","mailman-owner",
 "gtm","estb","engoff","elections","dos","arun","akb","vp@iitg","techniche","swc@","pro@i","placement@","clhod@","hackers@",
